@@ -11,14 +11,9 @@
       "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum malesuada massa in leo cursus interdum."
     },
     {
-      "id": 3,
-      "rating": 7,
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum malesuada massa in leo cursus interdum."
-    },
-    {
-      "text": "this is a test",
-      "rating": 9,
-      "id": 4
+      "text": "Updated Item",
+      "rating": 4,
+      "id": 3
     }
   ]
 }
