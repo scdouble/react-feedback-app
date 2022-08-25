@@ -1,14 +1,20 @@
 import React from 'react';
-import { useState } from 'react';
+import { useState, useContext, useEffect } from 'react';
+import FeedbackContext from '../context/FeedbackContext';
 
 function RatingSelect({ select }) {
   const [selected, setSelected] = useState(10);
+  const { feedbackEdit } = useContext(FeedbackContext);
+
+  useEffect(()=>{
+    setSelected(feedbackEdit.item.rating)
+  },[feedbackEdit])
 
   const handleChange = (e) => {
     // e.currentTarget.valueはString型、前に+を入れることでIntに変換できる
     setSelected(+e.currentTarget.value);
-    select(selected);
-    console.log("RatingSelect",selected)
+    select(+e.currentTarget.value);
+    console.log('RatingSelect', selected);
   };
 
   return (
