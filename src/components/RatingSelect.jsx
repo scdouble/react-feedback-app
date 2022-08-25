@@ -8,6 +8,7 @@ function RatingSelect({ select }) {
     // e.currentTarget.valueはString型、前に+を入れることでIntに変換できる
     setSelected(+e.currentTarget.value);
     select(selected);
+    console.log("RatingSelect",selected)
   };
 
   return (
